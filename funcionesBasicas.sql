@@ -5,8 +5,7 @@ USE EjerciciosBBDD;
 
 DELIMITER //
 
-/*1. Crea una función que devuelva 1 ó 0 si un número es o no divisible por otro. Debe de recibir
-dos números por parámetros.*/
+/*1. */
 
 DROP FUNCTION IF EXISTS Divisible; //
 
@@ -28,8 +27,7 @@ SELECT Divisible(6,3); //
 
 SELECT Divisible(2,3); //
 
-/*2. Usa las estructuras condicionales para mostrar el día de la semana según un valor de entrada
-numérico, 1 para domingo, 2 lunes, etc.*/
+/*2. */
 
 DROP FUNCTION IF EXISTS devolverdia; //
 
@@ -70,9 +68,7 @@ SELECT devolverdia(1); //
 SELECT devolverdia(8); //
 
 
-/*3. Sabiendo que la función now() devuelve la fecha actual y que DATE_FORMAT le da
-formato a la fecha, crea una procedimiento que llame a la función anterior del día de la
-semana, y para los días “viernes” nos de la fecha de hoy en formato dd-mm-yyyy. */
+/*3.  */
 
 DROP PROCEDURE IF EXISTS Fecha; //
 CREATE PROCEDURE Fecha()
@@ -88,12 +84,7 @@ END; //
 
 CALL Fecha(); //
 
-/*4. Crea un procedimiento que reciba una fecha por parámetro y muestre por pantalla el día de
-la semana, seguido del número de día, mes y año como se muestra a continuación.
-+------------------------------------+
-| Fecha |
-+------------------------------------+
-| martes, 19 de febrero de 2019 */
+/*4. */
 
 DROP PROCEDURE IF EXISTS fechaActual; //
 
@@ -105,8 +96,7 @@ END; //
 CALL fechaActual(); //
 
 
--- 5. Crea una función, que reciba por parámetro una fecha de nacimiento y devuelva la edad de
--- la persona en años.
+/*5.  */
 
 DROP FUNCTION IF EXISTS edad; //
 
@@ -122,7 +112,7 @@ SELECT edad('1999/09/02') AS Edad; //
 SELECT edad('1998/01/16') AS Edad; //
 SELECT edad('2010/10/02') AS Edad; //
 
-/*6. Crea una función que devuelva el mayor de tres números pasados como parámetros.*/
+/*6..*/
 
 DROP FUNCTION IF EXISTS MayorDeTresNumeros; //
 
